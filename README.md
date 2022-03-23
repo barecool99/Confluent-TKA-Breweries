@@ -1,5 +1,13 @@
 # Confluent-TKA-Breweries
 
+API: https://api.openbrewerydb.org/
+
+Functions:
+  1. Requests all breweries from API.
+  2. Kafka producer sends individual breweries to topic.
+  3. ksqlDB stream reads the messages and filters them based on their brewery type --> 'brewpub'.
+  4. Consumers setup to read from initial topic 'tpc_breweries' and the filtered topic.
+
 # Set-up
 
   1. Create a file called 'config.ini' witin repo folder.
