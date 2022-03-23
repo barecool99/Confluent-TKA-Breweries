@@ -28,7 +28,9 @@
     
   3. Initialise the virtual environment - 
       > python -m venv venv
+      > 
       > venv/Scripts/activate
+      > 
       > pip install -r requirements.txt
 
   4. Run the consumer 'consumer_Breweries.py'
